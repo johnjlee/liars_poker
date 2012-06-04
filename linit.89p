@@ -1,0 +1,11 @@
+linit()
+Prgm
+{"2c","2d","2h","2s","Ad","3d","4d","5d","6d","7d","8d","9d","10d","Jd","Qd","Kd","Ac","3c","4c","5c","6c","7c","8c","9c","10c","Jc","Qc","Kc","Ah","3h","4h","5h","6h","7h","8h","9h","10h","Jh","Qh","Kh","As","3s","4s","5s","6s","7s","8s","9s","10s","Js","Qs","Ks"}->deck
+
+{"2 clubs","2 diamonds","2h","2s","A diamonds","3 diamonds","4 diamonds","5 diamonds","6 diamonds","7 diamonds","8 diamonds","9 diamonds","10 diamonds","J diamonds","Q diamonds","K diamonds","A clubs","3 clubs","4 clubs","5 clubs","6 clubs","7 clubs","8 clubs","9 clubs","10 clubs","J clubs","Q clubs","K clubs","A hearts","3 hearts","4 hearts","5 hearts","6 hearts","7 hearts","8 hearts","9 hearts","10 hearts","J hearts","Q hearts","K hearts","A spads","3 spads","4 spads","5 spads","6 spads","7 spads","8 spads","9 spads","10 spads","J spads","Q spads","K spads"}->ldeck
+
+{1,2,3,4,5,6,7,8,9}->tdeck
+
+EndPrgm
+
+

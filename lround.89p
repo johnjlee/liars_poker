@@ -1,0 +1,54 @@
+lround(n,p)
+Prgm
+Local ncards,i,j,temp,cards,inplay,t2
+Disp "Dealing.."
+0->ncards
+For i,1,n
+ncards+p[i]->ncards
+EndFor
+
+{}->inplay
+For i,1,ncards
+mod(det(randMat(2,2)),51)+1->r
+games\inlist(r,inplay,i-1)
+while listin=1
+mod(det(randMat(2,2)),51)+1->r
+games\inlist(r,inplay,i-1)
+EndWhile
+augment(inplay,{r})->inplay
+EndFor
+
+inplay->cards
+For i,1,n
+If p[i]>0 Then
+ClrIO
+Disp "Give to player "&string(i)
+Disp "Player "&string(i)&", press enter"
+Pause
+ClrIO
+Disp "Player "&string(i)&"'s hand:"
+For j,1,p[i]
+Disp ldeck[cards[j]]
+EndFor
+mid(cards,p[i]+1)->cards
+
+Disp "Press enter"
+Pause
+EndIf
+EndFor
+
+ClrIO
+Disp "Press enter after"
+Disp "someone calls."
+Pause
+
+SortA inplay
+ClrIO
+For i,1,n
+left(inplay,p[i])->temp
+Disp string(i)&":"&string(games\lmap(temp,p[i]))
+mid(inplay,p[i]+1)->inplay
+EndFor
+Pause
+ClrIO
+EndPrgm

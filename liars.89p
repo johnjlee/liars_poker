@@ -1,0 +1,28 @@
+liars(n,c)
+Prgm
+Local i,hands,rnd,j,ncards,loser
+1->rnd
+{}->hands
+For i,1,n
+augment(hands,{c})->hands
+EndFor
+
+While 1=1
+ClrIO
+0->ncards
+Disp "Round "&string(rnd)
+
+For j,1,n
+ncards+hands[j]->ncards
+EndFor
+
+Disp string(ncards)&" cards"
+Disp "PRESS ENTER TO START"
+Pause
+games\lround(n,hands)
+Input "Who lost?",loser
+
+hands[loser]-1->hands[loser]
+rnd+1->rnd
+EndWhile
+EndPrgm

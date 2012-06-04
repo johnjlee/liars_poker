@@ -1,0 +1,9 @@
+lmap(l,n)
+Func
+Local i,abcde
+{}->abcde
+For i,1,n
+augment(abcde,{deck[l[i]]})->abcde
+EndFor
+Return abcde
+EndFunc

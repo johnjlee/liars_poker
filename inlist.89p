@@ -1,0 +1,11 @@
+inlist(e,l,n)
+Prgm
+Local i
+For i,1,n
+If l[i]=e Then
+1->listin
+Return 1
+EndIf
+EndFor
+0->listin
+EndPrgm

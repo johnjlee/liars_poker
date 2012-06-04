@@ -1,0 +1,10 @@
+indeck(e,n)
+Prgm
+For i,1,n
+If deck[i]=e Then
+1->deckin
+Return 1
+EndIf
+EndFor
+0->deckin
+EndPrgm
